@@ -1,126 +1,137 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mentes Brilhantes — Danilo Rodrigues</title>
-  <meta name="description" content="Mentes Brilhantes — eBook sobre autismo. Compre e receba assistência para famílias.">
   <style>
-    :root{
-      --blue:#0b63a8;
-      --soft-blue:#eaf4ff;
-      --dark:#0b2a3a;
-      --muted:#666;
-      --maxw:980px;
-      --radius:12px;
-      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    :root {
+      --azul: #007BFF;
+      --claro: #f8f9fa;
+      --escuro: #212529;
     }
-    *{box-sizing:border-box}
-    body{margin:0; background:linear-gradient(180deg,var(--soft-blue),#fff); color:var(--dark); line-height:1.55}
-    .wrap{max-width:var(--maxw); margin:28px auto; padding:20px;}
-    header.site{display:flex; gap:18px; align-items:center; margin-bottom:18px}
-    .logo{display:flex; flex-direction:column; gap:4px}
-    h1{margin:0; font-size:1.6rem; color:var(--blue)}
-    .subtitle{color:var(--muted); font-size:0.95rem}
-    .hero{display:grid; grid-template-columns: 1fr 380px; gap:22px; align-items:center; margin-top:14px}
-    @media (max-width:880px){ .hero{grid-template-columns:1fr; padding:0} .hero .cover{order:-1} }
-    .card{background:#fff; border-radius:var(--radius); padding:18px; box-shadow:0 6px 22px rgba(11,99,160,0.08)}
-    .cover img{width:100%; height:auto; border-radius:8px; display:block}
-    .buy {display:inline-block; background:var(--blue); color:#fff; padding:12px 18px; border-radius:10px; text-decoration:none; font-weight:600}
-    .outline {display:inline-block; border:2px solid var(--blue); color:var(--blue); padding:10px 14px; border-radius:10px; text-decoration:none; margin-left:10px}
-    .meta{margin-top:12px; color:var(--muted); font-size:0.95rem}
-    section {margin-top:24px}
-    h2{margin-top:0; color:var(--blue)}
-    .cols{display:grid; grid-template-columns: 1fr 1fr; gap:16px}
-    @media (max-width:880px){ .cols{grid-template-columns:1fr} }
-    form .row{display:flex; gap:10px}
-    form input, form textarea{width:100%; padding:10px; border:1px solid #e0e0e0; border-radius:8px; font-size:1rem}
-    form textarea{min-height:120px; resize:vertical}
-    footer{margin-top:36px; text-align:center; color:var(--muted); font-size:0.9rem}
-    .small{font-size:0.9rem; color:var(--muted)}
+    body {
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: var(--claro);
+      color: var(--escuro);
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, var(--azul), #0056b3);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+    }
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: var(--azul);
+      border-left: 6px solid var(--azul);
+      padding-left: 10px;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--azul);
+      color: white;
+      padding: 12px 28px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #0056b3;
+      transform: scale(1.05);
+    }
+    form {
+      display: grid;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    input, textarea {
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      width: 100%;
+    }
+    button {
+      background: var(--azul);
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      background: var(--azul);
+      color: white;
+      font-size: 0.9rem;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+    }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <header class="site">
-      <div class="logo">
-        <h1>Mentes Brilhantes</h1>
-        <div class="subtitle">Compreendendo o Autismo com Amor e Esperança — Danilo Rodrigues</div>
-      </div>
-    </header>
+  <header>
+    <h1>Mentes Brilhantes</h1>
+    <p>Compreendendo o Autismo com Amor e Esperança — por Danilo Rodrigues</p>
+  </header>
 
-    <main class="hero">
-      <div class="card">
-        <h2>Sobre o eBook</h2>
-        <p>“Mentes Brilhantes” é um guia emocional e prático, voltado para pais e familiares. Contém estratégias, histórias e apoio para acompanhar pessoas no espectro autista.</p>
+  <main>
+    <h2>📘 Sobre o eBook</h2>
+    <p><strong>Mentes Brilhantes</strong> é um guia emocionante e prático que traz compreensão, empatia e estratégias reais para lidar com o autismo.  
+    Escrito com amor por <strong>Danilo Rodrigues</strong>, o livro mostra que o autismo não limita — ele revela mentes incríveis e cheias de potencial.</p>
 
-        <div class="meta">Formato digital otimizado para celular/tablet — PDF</div>
-        <div style="margin-top:14px;">
-          <a class="buy" id="buyBtn" href="https://mpago.la/1iR6TDx" target="_blank" rel="noopener">Comprar Agora</a>
-          <a class="outline" id="readSample" href="Mentes_Brilhantes_Autismo.pdf" target="_blank" rel="noopener">Ver PDF (amostra)</a>
-        </div>
+    <div style="text-align:center; margin: 30px 0;">
+      <a href="https://mpago.la/1iR6TDx" class="btn">🛒 Comprar eBook Agora</a>
+    </div>
 
-        <section>
-          <h3>O que você encontrará</h3>
-          <ul>
-            <li>Compreensão do espectro autista</li>
-            <li>Estratégias práticas para o dia a dia</li>
-            <li>Histórias reais e inspiradoras</li>
-            <li>Guia para preparação do futuro e autonomia</li>
-          </ul>
-        </section>
-      </div>
+    <h2>💡 O que você encontrará</h2>
+    <ul>
+      <li>Compreensão profunda do espectro autista</li>
+      <li>Estratégias práticas para o dia a dia</li>
+      <li>Histórias reais e inspiradoras</li>
+      <li>Dicas para promover autonomia e inclusão</li>
+    </ul>
 
-      <aside class="cover card">
-        <img src="cover.jpg" alt="Capa Mentes Brilhantes — Danilo Rodrigues">
-        <div style="margin-top:10px; display:flex; gap:8px; align-items:center; justify-content:space-between">
-          <div style="font-weight:600">Autor: Danilo Rodrigues</div>
-          <div class="small">© 2025 Mentes Brilhantes</div>
-        </div>
-      </aside>
-    </main>
+    <h2>📩 Fale com o autor</h2>
+    <p>Envie uma mensagem para solicitar apoio, tirar dúvidas ou compartilhar sua experiência:</p>
 
-    <section class="card">
-      <h2>Sobre o autor</h2>
-      <p>Danilo Rodrigues é autor do eBook e atua oferecendo apoio a famílias e indivíduos com autismo. Sua missão é levar informação, empatia e ferramentas práticas para promover inclusão e autonomia.</p>
-    </section>
+    <form>
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu e-mail" required>
+      <textarea rows="4" placeholder="Escreva sua mensagem aqui..." required></textarea>
+      <button type="submit">Enviar Mensagem</button>
+    </form>
+  </main>
 
-    <section class="card">
-      <h2>Assistência e contato</h2>
-      <p>Preencha o formulário para solicitar assistência, tirar dúvidas ou pedir orientação personalizada. Responderemos por e-mail o mais rápido possível.</p>
-
-      <form id="contactForm" class="card" style="margin-top:12px" method="POST" action="https://formspree.io/f/mnqkwzyj">
-        <div style="display:grid; gap:10px">
-          <input type="text" name="name" placeholder="Nome completo" required>
-          <input type="email" name="email" placeholder="Seu e-mail" required>
-          <input type="hidden" name="_replyto" value="dandanplaysson88@gmail.com">
-          <input type="text" name="subject" placeholder="Assunto (ex: Assistência, Compra, Dúvida)" required>
-          <textarea name="message" placeholder="Escreva sua mensagem ou descreva a assistência que precisa" required></textarea>
-          <div style="display:flex; gap:8px;">
-            <button type="submit" class="buy" style="border-radius:8px; border:none;">Enviar Mensagem</button>
-            <button type="button" class="outline" onclick="document.getElementById('contactForm').reset();">Limpar</button>
-          </div>
-          <div id="formMsg" class="small" aria-live="polite" style="display:none"></div>
-        </div>
-      </form>
-    </section>
-
-    <footer>
-      <div>© 2025 Mentes Brilhantes — Danilo Rodrigues</div>
-      <div style="margin-top:6px" class="small">Desenvolvido por Jarvis</div>
-    </footer>
-  </div>
-
-  <script>
-    (function(){
-      const form = document.getElementById('contactForm');
-      const msg = document.getElementById('formMsg');
-      form.addEventListener('submit', function(){
-        msg.style.display = 'block';
-        msg.textContent = 'Enviando... Por favor aguarde.';
-        setTimeout(()=>{ msg.textContent = 'Mensagem enviada com sucesso!'; }, 1500);
-      });
-    })();
-  </script>
+  <footer>
+    © 2025 Mentes Brilhantes — Criado por Danilo Rodrigues | Contato: dandanplaysson88@gmail.com
+  </footer>
 </body>
 </html>
